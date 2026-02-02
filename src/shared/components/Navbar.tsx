@@ -48,7 +48,7 @@ const Navbar = () => {
         </nav>
 
         <Button
-          text={"Be Our Consumer"}
+          text={"Join Merx"}
           icon={"/assets/login-icon.svg"}
           width={20}
           height={20}

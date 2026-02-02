@@ -9,8 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Merx",
-  description: "Simple Product Management Platform",
+  title: "Merx — Simple Product Management Platform",
+  description:
+    "Merx is a simple and focused product management platform that helps you create, update, and organize products with clarity and ease.",
 };
 
 export default function RootLayout({

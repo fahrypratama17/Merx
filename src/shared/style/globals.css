@@ -30,6 +30,10 @@ html, body {
         @apply max-w-[1258px] min-h-screen mx-auto px-4 sm:px-8 md:px-12 lg:px-16;
     }
 
+    .glass-pane {
+        @apply flex flex-col items-center justify-center gap-6 rounded-xl border-2 border-white p-8 text-center backdrop-blur-lg;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         @apply leading-[1.2];
     }
