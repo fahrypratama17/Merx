@@ -35,7 +35,7 @@ const HeroSection = () => {
           </p>
           <Button
             text={"Start Your Store or Shop"}
-            icon={"/assets/login-icon.svg"}
+            icon={"/assets/Right-icon.svg"}
             width={20}
             height={20}
             className={

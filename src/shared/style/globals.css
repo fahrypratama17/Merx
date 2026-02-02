@@ -27,7 +27,11 @@ html, body {
     }
 
     .container {
-        @apply max-w-[1258px] min-h-screen mx-auto px-4 sm:px-8 md:px-12 lg:px-16;
+        @apply min-h-screen mx-auto px-4 sm:px-8 md:px-12 lg:px-16;
+    }
+
+    .centered {
+        @apply flex min-h-screen items-center;
     }
 
     .glass-pane {
