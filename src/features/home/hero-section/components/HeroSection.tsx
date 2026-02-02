@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section id={"Hero"} className="relative h-screen overflow-hidden">
       <Image
-        src={"/assets/Background-1.png"}
+        src={"/assets/Background-2.png"}
         alt={"background"}
         fill
         className="absolute inset-0 object-cover"
