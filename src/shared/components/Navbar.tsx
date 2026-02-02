@@ -15,8 +15,8 @@ const navLink = [
   },
   {
     id: 3,
-    label: "Features",
-    href: "#Features",
+    label: "Products",
+    href: "#Products",
   },
 ];
 
