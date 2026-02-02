@@ -1,4 +1,4 @@
-export const whyMerxData = [
+export const whyMerxItem = [
   {
     id: 1,
     title: "A Calmer Way to Buy and Sell",
@@ -18,5 +18,74 @@ export const whyMerxData = [
     id: 4,
     title: "A Marketplace Built with Care and Trust",
     sub: "Clear information, consistent experience, and thoughtful design help buyers and sellers feel confident in every interaction.",
+  },
+];
+
+export const buyerItem = [
+  {
+    id: 1,
+    title: "Discover Products",
+    sub: "Browse a wide range of products with clear details and transparent pricing, all in one calm marketplace.",
+  },
+  {
+    id: 2,
+    title: "Choose with Confidence",
+    sub: "Compare products, read descriptions, and make decisions without distractions or unnecessary complexity.",
+  },
+  {
+    id: 3,
+    title: "Shop with Ease",
+    sub: "Complete your purchase smoothly in a simple and secure flow, designed to feel natural and stress-free.",
+  },
+];
+
+export const sellerItem = [
+  {
+    id: 1,
+    title: "Create Your Store",
+    sub: "Set up your store and start listing products in a few simple steps, without complicated setup.",
+  },
+  {
+    id: 2,
+    title: "Manage Products Simply",
+    sub: "Add, update, and organize your products with a clean and intuitive system that keeps everything clear.",
+  },
+  {
+    id: 3,
+    title: "Sell and Grow",
+    sub: "Reach buyers, manage your products, and grow your store in a marketplace built to support both sides.",
+  },
+];
+
+export const featuresItem = [
+  {
+    id: 1,
+    title: "Simple Product Management",
+    sub: "Add, update, and organize your products in a clean interface designed to stay out of your way.",
+  },
+  {
+    id: 2,
+    title: "Clean Shopping Experience",
+    sub: "Browse products in a focused layout that helps buyers find what they need without distractions.",
+  },
+  {
+    id: 3,
+    title: "Clear Product Information",
+    sub: "Product details, pricing, and availability are presented clearly to help buyers decide with confidence.",
+  },
+  {
+    id: 4,
+    title: "Responsive on Every Device",
+    sub: "Shop or manage your store comfortably on desktop, tablet, or mobile devices.",
+  },
+  {
+    id: 5,
+    title: "Secure and Reliable Flow",
+    sub: "Built with reliable systems to ensure smooth interactions for both buyers and sellers.",
+  },
+  {
+    id: 6,
+    title: "One Platform, Two Roles",
+    sub: "Buy and sell in one connected marketplace without switching tools or platforms.",
   },
 ];
