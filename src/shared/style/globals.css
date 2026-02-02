@@ -7,6 +7,7 @@
     --color-foregroundClr-2: #4B5563;
     --color-primaryBtn-bg: #2F7D32;
     --color-primaryBtn-hover: #256628;
+    --color-navbar: #256628;
     --color-secondaryBtn-bg: #66A46F;
     --color-secondaryBtn-hover: #7FB38A;
     --color-textBtn: #FFFFFF;
@@ -21,12 +22,12 @@ html, body {
 }
 
 @layer utilities {
-    section {
+    .section {
         @apply pt-28;
     }
 
     .container {
-        @apply max-w-[1258px] mx-auto px-4 sm:px-8 md:px-12 lg:px-16;
+        @apply max-w-[1258px] min-h-screen mx-auto px-4 sm:px-8 md:px-12 lg:px-16;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -54,10 +55,10 @@ html, body {
     }
 
     .navbar {
-        @apply fixed z-100 w-full flex justify-between items-center p-5 pt-15 transition-all duration-300 ease-in-out;
+        @apply bg-navbar text-textBtn fixed z-100 w-full flex justify-between items-center p-5 transition-all duration-300 ease-in-out;
 
         .logo {
-            @apply text-xl font-semibold transition-transform duration-300 hover:scale-105 md:text-2xl flex items-center justify-center gap-4;
+            @apply text-textBtn text-xl font-semibold transition-transform duration-300 hover:scale-105 md:text-2xl flex items-center justify-center gap-4;
         }
     }
 
@@ -66,7 +67,7 @@ html, body {
     }
 
     .underlined-animation {
-        @apply absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full;
+        @apply absolute -bottom-1 left-0 h-0.5 w-0 bg-card transition-all duration-300 group-hover:w-full;
     }
 
     .button-animation {
