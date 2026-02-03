@@ -51,7 +51,7 @@ export const sellerItem = [
   },
   {
     id: 2,
-    title: "Manage Products Simply",
+    title: "Product Management",
     sub: "Add, update, and organize your products with a clean and intuitive system that keeps everything clear.",
   },
   {

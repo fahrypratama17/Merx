@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "@/shared/components/Button";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -33,15 +34,17 @@ const HeroSection = () => {
             Merx connects buyers and sellers in a simple, focused marketplace
             where managing and discovering products feels effortless.
           </p>
-          <Button
-            text={"Start Your Store or Shop"}
-            icon={"/assets/Right-icon.svg"}
-            width={20}
-            height={20}
-            className={
-              "bg-primaryBtn-bg hover:bg-primaryBtn-hover text-textBtn border-border flex items-center gap-2 rounded-xl border-2 p-2 px-6"
-            }
-          />
+          <Link href={"/login"}>
+            <Button
+              text={"Start Your Store or Shop"}
+              icon={"/assets/Right-icon.svg"}
+              width={20}
+              height={20}
+              className={
+                "bg-primaryBtn-bg hover:bg-primaryBtn-hover text-textBtn border-border flex cursor-pointer items-center gap-2 rounded-xl border-2 p-2 px-6"
+              }
+            />
+          </Link>
         </div>
       </div>
     </section>
