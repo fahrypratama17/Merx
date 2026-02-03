@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-center gap-7">
         <h1 className="title !text-backgroundClr">Merx</h1>
         <p className="subtitle !text-backgroundClr-2/80">
-          A digital astronomy observatory built for exploration and
-          understanding.
+          Where every product finds its place, and every seller finds their
+          space.
         </p>
         <Image
           src={"/assets/Logo-white.svg"}
