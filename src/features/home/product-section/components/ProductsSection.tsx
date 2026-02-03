@@ -1,7 +1,17 @@
-import { AnimatedProducts } from "@/features/home/product-section/components/AnimatedProducts";
+"use client";
+
+import dynamic from "next/dynamic";
 import { products } from "@/features/home/product-section/data/data";
 
 const ProductsSection = () => {
+  const AnimatedProducts = dynamic(
+    () =>
+      import("@/features/home/product-section/components/AnimatedProducts").then(
+        (mod) => mod.AnimatedProducts,
+      ),
+    { ssr: false },
+  );
+
   return (
     <section id={"Products"} className="section">
       <div className="container">

@@ -8,6 +8,7 @@ import Button from "@/shared/components/Button";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import Link from "next/link";
 
 const HowItWorksSection = () => {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -86,15 +87,17 @@ const HowItWorksSection = () => {
                     })}
                   </div>
                   <div className="flex justify-center">
-                    <Button
-                      text={"Start Shopping"}
-                      icon={"/assets/shopping.svg"}
-                      width={20}
-                      height={20}
-                      className={
-                        "text-textBtn mt-8 flex cursor-pointer items-center justify-center gap-2 rounded-xl bg-blue-600 p-2 px-6 transition-transform duration-300 hover:-translate-y-2 hover:bg-blue-700"
-                      }
-                    />
+                    <Link href={"/login"}>
+                      <Button
+                        text={"Start Shopping"}
+                        icon={"/assets/shopping.svg"}
+                        width={20}
+                        height={20}
+                        className={
+                          "text-textBtn mt-8 flex cursor-pointer items-center justify-center gap-2 rounded-xl bg-blue-600 p-2 px-6 transition-transform duration-300 hover:-translate-y-2 hover:bg-blue-700"
+                        }
+                      />
+                    </Link>
                   </div>
                 </motion.div>
               )}
@@ -164,13 +167,15 @@ const HowItWorksSection = () => {
                     })}
                   </div>
                   <div className="flex justify-center">
-                    <Button
-                      text={"Start Selling"}
-                      icon={"/assets/cashier.svg"}
-                      width={20}
-                      height={20}
-                      className="mt-8 flex scale-105 cursor-pointer items-center justify-center gap-2 rounded-xl bg-amber-500 p-2 px-6 text-slate-900 transition-transform duration-300 hover:-translate-y-2 hover:bg-[#D97706]"
-                    />
+                    <Link href={"/login"}>
+                      <Button
+                        text={"Start Selling"}
+                        icon={"/assets/cashier.svg"}
+                        width={20}
+                        height={20}
+                        className="mt-8 flex scale-105 cursor-pointer items-center justify-center gap-2 rounded-xl bg-amber-500 p-2 px-6 text-slate-900 transition-transform duration-300 hover:-translate-y-2 hover:bg-[#D97706]"
+                      />
+                    </Link>
                   </div>
                 </motion.div>
               )}
