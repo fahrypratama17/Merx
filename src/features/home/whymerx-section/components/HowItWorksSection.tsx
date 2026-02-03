@@ -9,6 +9,10 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
+import { staggerContainer } from "@/shared/components/animation/StaggerContainer";
+import { fadeInUp } from "@/shared/components/animation/FadeInUp";
+import { fadeInLeft } from "@/shared/components/animation/FadeInLeft";
+import { fadeInRight } from "@/shared/components/animation/FadeInRight";
 
 const HowItWorksSection = () => {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -16,15 +20,26 @@ const HowItWorksSection = () => {
 
   return (
     <section className="pb-20">
-      <div className="mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="mx-auto px-4 sm:px-8 md:px-12 lg:px-16"
+      >
         <div className="mb-0 space-y-4 text-center lg:mb-10">
-          <h1 className="title">How It Works</h1>
-          <p className="subtitle italic">
+          <motion.h1 variants={fadeInUp} className="title">
+            How It Works
+          </motion.h1>
+          <motion.p variants={fadeInUp} className="subtitle italic">
             A simple flow for buying and selling on Merx.
-          </p>
+          </motion.p>
         </div>
         <div className="mx-auto grid w-5/6 grid-cols-1 gap-12 lg:grid-cols-2">
-          <div className="flex flex-col items-center pb-8">
+          <motion.div
+            variants={fadeInLeft}
+            className="flex flex-col items-center pb-8"
+          >
             <div
               className="bg-secondaryBtn-bg flex w-full cursor-pointer justify-center rounded-xl py-8 text-center"
               onClick={() => setIsOpen1(!isOpen1)}
@@ -102,9 +117,12 @@ const HowItWorksSection = () => {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-center pb-8">
+          <motion.div
+            variants={fadeInRight}
+            className="flex flex-col items-center pb-8"
+          >
             <div
               className="bg-secondaryBtn-bg flex w-full cursor-pointer justify-center rounded-xl py-8 text-center"
               onClick={() => setIsOpen2(!isOpen2)}
@@ -180,9 +198,9 @@ const HowItWorksSection = () => {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

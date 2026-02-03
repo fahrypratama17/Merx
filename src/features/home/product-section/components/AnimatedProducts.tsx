@@ -124,7 +124,7 @@ export const AnimatedProducts = ({
               </p>
               <p className="text-lg text-black">{testimonials[active].price}</p>
             </div>
-            <motion.p className="mt-8 text-lg font-medium">
+            <p className="mt-8 text-lg font-medium">
               {testimonials[active].description
                 .split(" ")
                 .map((word, index) => (
@@ -150,7 +150,7 @@ export const AnimatedProducts = ({
                     {word}&nbsp;
                   </motion.span>
                 ))}
-            </motion.p>
+            </p>
           </motion.div>
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
