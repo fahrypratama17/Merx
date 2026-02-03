@@ -47,15 +47,17 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        <Button
-          text={"Join Merx"}
-          icon={"/assets/login-icon.svg"}
-          width={20}
-          height={20}
-          className={
-            "bg-backgroundClr text-navbar flex items-center gap-2 rounded-xl p-2 px-6"
-          }
-        />
+        <Link href={"/login"}>
+          <Button
+            text={"Join Merx"}
+            icon={"/assets/cart.svg"}
+            width={20}
+            height={20}
+            className={
+              "bg-backgroundClr text-navbar flex items-center gap-2 rounded-xl p-2 px-6"
+            }
+          />
+        </Link>
       </div>
     </header>
   );

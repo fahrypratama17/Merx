@@ -6,7 +6,7 @@ const WhyMerxSection = () => {
     <section id={"Why-Merx"}>
       <div className="centered container py-0 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-[0.6fr_1fr]">
-          <div className="my-auto">
+          <div className="my-auto space-y-5">
             <h1 className="title">Why Merx</h1>
             <p className="subtitle">
               Built for people who buy and sell with focus.
@@ -14,7 +14,12 @@ const WhyMerxSection = () => {
           </div>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             {whyMerxItem.map((item) => (
-              <Card key={item.id} title={item.title} sub={item.sub} />
+              <Card
+                key={item.id}
+                icon={item.icon}
+                title={item.title}
+                sub={item.sub}
+              />
             ))}
           </div>
         </div>
