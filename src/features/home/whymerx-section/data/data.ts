@@ -64,31 +64,37 @@ export const sellerItem = [
 export const featuresItem = [
   {
     id: 1,
+    icon: "/assets/products.svg",
     title: "Simple Product Management",
     sub: "Add, update, and organize your products in a clean interface designed to stay out of your way.",
   },
   {
     id: 2,
+    icon: "/assets/shopping-experience.svg",
     title: "Clean Shopping Experience",
     sub: "Browse products in a focused layout that helps buyers find what they need without distractions.",
   },
   {
     id: 3,
+    icon: "/assets/information.svg",
     title: "Clear Product Information",
     sub: "Product details, pricing, and availability are presented clearly to help buyers decide with confidence.",
   },
   {
     id: 4,
+    icon: "/assets/device.svg",
     title: "Responsive on Every Device",
     sub: "Shop or manage your store comfortably on desktop, tablet, or mobile devices.",
   },
   {
     id: 5,
+    icon: "/assets/secure.svg",
     title: "Secure and Reliable Flow",
     sub: "Built with reliable systems to ensure smooth interactions for both buyers and sellers.",
   },
   {
     id: 6,
+    icon: "/assets/platform.svg",
     title: "One Platform, Two Roles",
     sub: "Buy and sell in one connected marketplace without switching tools or platforms.",
   },
