@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Senandika - Login",
+  title: "Merx - Login",
 };
 
 export default function Layout({
