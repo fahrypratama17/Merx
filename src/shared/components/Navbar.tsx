@@ -6,7 +6,7 @@ const navLink = [
   {
     id: 1,
     label: "Home",
-    href: "#Home",
+    href: "#Hero",
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        <Link href={"/login"}>
+        <Link href={`/login`}>
           <Button
             text={"Join Merx"}
             icon={"/assets/cart.svg"}
