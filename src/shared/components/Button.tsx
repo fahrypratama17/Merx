@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 interface buttonProp {
   text: string;
@@ -11,7 +10,7 @@ interface buttonProp {
 
 const Button = ({ text, icon, width, height, className }: buttonProp) => {
   return (
-    <Link href={"#"} className="group">
+    <div className="group">
       <p className={className}>
         {text}
         <Image
@@ -22,7 +21,7 @@ const Button = ({ text, icon, width, height, className }: buttonProp) => {
           className="button-animation"
         />
       </p>
-    </Link>
+    </div>
   );
 };
 

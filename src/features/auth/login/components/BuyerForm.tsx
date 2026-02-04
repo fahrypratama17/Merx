@@ -50,16 +50,17 @@ const BuyerForm = () => {
         </div>
       </div>
       <div className="w-full max-w-[50%] px-10 pt-10">
-        <Button
-          href={"/"}
-          text={"Sign In"}
-          icon={"/assets/Right-icon.svg"}
-          width={20}
-          height={20}
-          className={
-            "text-textBtn flex justify-center gap-2 rounded-full border bg-blue-500 px-10 py-2"
-          }
-        />
+        <Link href={"/"}>
+          <Button
+            text={"Sign In"}
+            icon={"/assets/Right-icon.svg"}
+            width={20}
+            height={20}
+            className={
+              "text-textBtn flex justify-center gap-2 rounded-full border bg-blue-500 px-10 py-2"
+            }
+          />
+        </Link>
       </div>
       <div className="flex items-center gap-4 py-10">
         <div className="bg-muted/40 h-0.5 w-50" />
